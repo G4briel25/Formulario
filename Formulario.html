@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Document</title>
+
+</head>
+<body>
+    
+    <h1>Escola Virtual</h1>
+    <hr>
+    <form method="post">
+        <fieldset>
+            <legend>Formulário de Pré-Matrícula</legend>
+            <label class="item">Nome do Aluno: <input type="text" placeholder="Gabriel" required>
+            </label>
+
+            <label>Nascimento (dd/mm/aa): 
+                <input class="data" type="number" placeholder="dia" min="1" max="31" required>/
+                <input class="data" type="number" placeholder="mês" min="1" max="12" required>/
+                <input class="data" type="number" placeholder="ano" min="1940" max="2023" required>
+            </label>
+
+            <label>Nome da Mãe: 
+                <input type="text" placeholder="Nome da mãe" required>
+            </label>
+
+            <label>Nome do Pai: 
+                <input type="text" placeholder="Nome do pai" required>
+            </label>
+
+            <label>Celular: 
+                <input type="tel" placeholder="(00) 00000-0000" required maxlength="11">
+            </label>
+
+            <label>E-mail (Opcional): 
+                <input type="email" name="email" placeholder="seuemail@gmail.com">
+            </label>
+        </fieldset>
+        <input type="submit" value="Enviar Matrícula" id="enviar">
+    </form>
+    <hr>
+
+</body>
+</html>
